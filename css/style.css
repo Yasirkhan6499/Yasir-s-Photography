@@ -39,7 +39,8 @@ main{
     
 }
 
-/* hero-block */
+/* hero-block for grid */
+/*
 .hero-block{
    display: grid;
    grid-template-columns: 100%;
@@ -97,3 +98,70 @@ main{
         align-self: center
     }
 }
+*/
+
+/* hero-block for flex */
+.hero-block{
+  
+  
+ }
+ .hero-block__content{
+     display: flex;
+     flex-direction: column;
+    justify-content: center;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    height: 50vh;
+    flex: 0 1 45vw;
+    
+ }
+ .hero-block__content h1{
+     font-size: 4rem;
+     font-weight: 500;
+ }
+ .hero-block__content p{
+     font-size: 1.7rem;
+     font-weight: 400;
+     color: gray;
+     margin: -1.5rem 0 3rem;
+ }
+ .hero-block__content button{
+     outline: none;
+     padding: 1.7rem 4rem;
+     font-size: 1.6rem;
+     border-radius: 3rem;
+     border: 0.7px solid rgba(150, 149, 149, 0.767);
+     cursor: pointer;
+     max-width: 18rem;
+     margin: 0 auto;
+ }
+ .hero-block__content button:hover{
+     background: black;
+     color: white;
+    
+ }
+ .hero-block__image{
+     height: 50vh;
+     background: url("/images/camera.jfif");
+     background-size: cover;
+     background-position: top;
+     background-repeat: no-repeat;
+    /* flex: 0 1 60vw;
+     width: 100vw; */
+ }
+ 
+ 
+ @media screen and (min-width:660px ) {
+     .hero-block{
+        display: flex;
+       }
+     .hero-block__content{
+         margin: auto;
+     }
+      .hero-block__image{
+         
+       height: 100vh;
+     }
+  
+ }
+
